@@ -74,8 +74,13 @@ WSGI_APPLICATION = 'ELECTROMARK_B.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'ElectroMart',
+        'USER': 'root',                   # Your MySQL username
+        'PASSWORD': 'Pullareddy@628',     # Your MySQL password
+        'HOST': 'localhost',              # Or '127.0.0.1'
+        'PORT': '3306',                   # Default MySQL port
+        
     }
 }
 
